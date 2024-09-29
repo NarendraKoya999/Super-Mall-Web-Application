@@ -1,8 +1,7 @@
-// src/pages/Shop.js
 import React, { useState, useEffect } from 'react';
 import { fetchProducts } from '../services/api';
 import ShopList from '../components/ShopList';
-import '../styles/Shop.css'; // Import custom styles
+import '../styles/Shop.css';
 
 function Shop({ productDeleted }) { // Accept the `productDeleted` prop
   const [products, setProducts] = useState([]);

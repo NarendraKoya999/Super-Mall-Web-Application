@@ -1,40 +1,38 @@
-/* src/styles/OfferList.css */
-
 /* Grid layout for the offers */
 .offers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
-  background-color: var(--background-color); /* Background from variables */
+  background-color: var(--background-color);
 }
 
 /* Each offer card */
 .offer-card {
-  background-color: var(--card-bg-color); /* White card background */
+  background-color: var(--card-bg-color);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px var(--shadow-color); /* Subtle shadow */
-  transition: transform var(--transition-duration), box-shadow var(--transition-duration); /* Smooth hover effect */
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: transform var(--transition-duration), box-shadow var(--transition-duration);
 }
 
 .offer-card:hover {
-  transform: var(--hover-transform); /* Slight zoom on hover */
-  box-shadow: 0 8px 16px var(--shadow-color); /* Larger shadow on hover */
+  transform: var(--hover-transform);
+  box-shadow: 0 8px 16px var(--shadow-color);
 }
 
 /* Image styles to ensure they are fully visible */
 .offer-image {
   width: 100%;
-  height: auto; /* Maintain the natural aspect ratio */
-  max-height: 250px; /* Set a maximum height to prevent images from being too large */
-  object-fit: contain; /* Ensure the entire image is shown without cutting off */
-  padding: 10px; /* Add some padding to ensure the image doesn't touch the edges */
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  padding: 10px;
   transition: transform var(--transition-duration);
 }
 
 .offer-image:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.05);
 }
 
 /* Offer details section */
@@ -44,31 +42,31 @@
 }
 
 /* Offer title */
-.offer-details h3 {
+h3 {
   font-size: 1.25rem;
-  color: var(--text-color); /* Dark gray for readability */
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 
 /* Offer description */
 .offer-details p {
   font-size: 1rem;
-  color: #555555; /* Lighter gray for secondary information */
+  color: #555555;
   margin-bottom: 8px;
 }
 
 /* Compare button */
 .btn-compare {
-  background-color: var(--primary-color); /* Use primary color for buttons */
+  background-color: var(--primary-color);
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color var(--transition-duration), transform var(--transition-duration); /* Smooth hover effect */
+  transition: background-color var(--transition-duration), transform var(--transition-duration);
 }
 
 .btn-compare:hover {
-  background-color: var(--accent-color); /* Change to accent color on hover */
-  transform: scale(1.05); /* Slight zoom on hover */
+  background-color: var(--accent-color);
+  transform: scale(1.05);
 }

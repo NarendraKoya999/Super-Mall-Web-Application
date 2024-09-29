@@ -1,10 +1,9 @@
-// src/pages/Admin.js
 import React, { useState, useEffect } from 'react';
-import { fetchProducts, updateProduct, deleteProduct, addProduct } from '../services/api'; // Import the API functions
+import { fetchProducts, updateProduct, deleteProduct, addProduct } from '../services/api';
 import { auth } from '../services/firebaseConfig';
 import { useNavigate } from 'react-router-dom';
 import { signOut } from 'firebase/auth';
-import '../styles/Admin.css'; // Import custom styles
+import '../styles/Admin.css';
 
 function Admin() {
   const [products, setProducts] = useState([]);

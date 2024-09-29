@@ -1,11 +1,13 @@
-/* src/styles/UserDashboard.css */
 .user-dashboard {
     padding: 40px 20px;
     background-color: var(--background-color);
   }
   
-  .user-dashboard h2,
-  .user-dashboard h3 {
+  h2{
+    color: var(--text-color);
+  }
+   
+  h3{
     color: var(--text-color);
   }
   

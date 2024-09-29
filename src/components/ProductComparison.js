@@ -1,6 +1,5 @@
-// src/components/ProductComparison.js
 import React from 'react';
-import '../styles/ProductComparison.css'; // Import custom styles
+import '../styles/ProductComparison.css';
 
 function ProductComparison({ productsToCompare }) {
   if (productsToCompare.length === 0) {

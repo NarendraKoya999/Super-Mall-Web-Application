@@ -1,5 +1,3 @@
-/* src/styles/Footer.css */
-
 .footer {
   background-color: var(--footer-bg-color);
   color: white;
@@ -32,7 +30,7 @@
 }
 
 .footer-left a {
-  color: white; /* Maintain white color for links */
+  color: white;
   text-decoration: none;
   margin-left: 10px;
 }
@@ -41,7 +39,7 @@
   color: var(--primary-color);
 }
 
-.footer-right { /* Grouping Follow Us and social icons together */
+.footer-right {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +53,7 @@
 
 .social-icons {
   display: flex;
-  gap: 1rem; /* Adjusted spacing between social icons */
+  gap: 1rem;
 }
 
 .social-icons a {

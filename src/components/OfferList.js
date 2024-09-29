@@ -1,6 +1,5 @@
-// src/components/OfferList.js
 import React from 'react';
-import '../styles/OfferList.css'; // Import custom styles
+import '../styles/OfferList.css';
 
 function OfferList({ offers, onCompare }) {
   return (

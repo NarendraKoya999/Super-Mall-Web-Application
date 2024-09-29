@@ -1,8 +1,7 @@
-// src/components/ShopDetails.js
 import React, { useState, useEffect } from 'react';
 import { fetchProductById } from '../services/api';
 import { useParams } from 'react-router-dom';
-import '../styles/ShopDetails.css'; // Import the CSS
+import '../styles/ShopDetails.css';
 
 function ShopDetails() {
   const { id } = useParams();

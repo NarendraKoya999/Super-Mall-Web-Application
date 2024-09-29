@@ -1,4 +1,3 @@
-// src/services/api.js
 const API_URL = 'https://fakestoreapi.com';
 
 // Fetch all products

@@ -1,4 +1,3 @@
-/* src/styles/Filter.css */
 .filter-section {
   background-color: var(--background-color);
   padding: 20px;
@@ -12,7 +11,7 @@
   box-shadow: 0 8px 16px var(--shadow-color);
 }
 
-.filter-section h3 {
+h3 {
   color: var(--text-color);
   margin-bottom: 10px;
 }

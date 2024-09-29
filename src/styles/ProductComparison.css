@@ -1,5 +1,3 @@
-/* src/styles/ProductComparison.css */
-
 /* Comparison section container */
 .comparison-section {
   margin-top: 40px;
@@ -13,7 +11,6 @@
 .comparison-section h3 {
   text-align: center;
   font-size: 1.5rem;
-  color: var(--text-color);
   margin-bottom: 20px;
 }
 
@@ -46,14 +43,12 @@
 /* Comparison product title */
 .comparison-card h3 {
   font-size: 1.2rem;
-  color: var(--text-color);
   margin: 15px 0;
 }
 
 /* Styling for price, category, and rating */
 .comparison-card p {
   font-size: 1rem;
-  color: var(--text-color);
   margin-bottom: 10px;
 }
 

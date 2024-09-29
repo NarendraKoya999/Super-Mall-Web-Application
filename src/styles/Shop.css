@@ -1,16 +1,14 @@
-/* src/styles/Shop.css */
-
 /* Container for the shop section */
 .shop-section {
   padding: 40px;
-  background-color: var(--background-color); /* Light Gray background */
+  background-color: var(--background-color);
 }
 
 /* Title styling */
-.shop-section h2 {
+h2 {
   text-align: center;
   font-size: 2rem;
-  color: var(--text-color); /* Dark Gray */
+  color:var(--text-color);
   margin-bottom: 30px;
   font-weight: bold;
 }
@@ -18,16 +16,16 @@
 /* Grid layout for the product list */
 .shop-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
-  gap: 20px; /* Space between product cards */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
   justify-items: center;
 }
 
 /* Each product card */
 .shop-item {
-  background-color: var(--card-bg-color); /* White background for cards */
+  background-color: var(--card-bg-color);
   border-radius: 10px;
-  box-shadow: 0 4px 8px var(--shadow-color); /* Light shadow */
+  box-shadow: 0 4px 8px var(--shadow-color);
   overflow: hidden;
   transition: transform var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
   max-width: 100%;
@@ -37,31 +35,31 @@
 
 /* Hover effect on product cards */
 .shop-item:hover {
-  transform: var(--hover-transform); /* Scale on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transform: var(--hover-transform);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Product image */
 .shop-item img {
   width: 100%;
-  height: 200px; /* Fixed height for uniformity */
-  object-fit: contain; /* Cover the area without distortion */
-  border-radius: 10px 10px 0 0; /* Round the top corners */
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px 10px 0 0;
 }
 
 /* Product title */
-.shop-item h3 {
+h3 {
   font-size: 1.2rem;
-  color: var(--text-color); /* Dark Gray */
+  color: var(--text-color);
   margin-top: 15px;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 /* Product description */
-.shop-item p {
+p {
   font-size: 0.9rem;
-  color: var(--text-color); /* Dark Gray */
+  color: var(--text-color);
   margin-bottom: 15px;
   padding: 0 10px;
   line-height: 1.5;
@@ -70,7 +68,7 @@
 /* Price styling */
 .shop-item .price {
   font-size: 1.1rem;
-  color: var(--secondary-color); /* Green for price */
+  color: var(--secondary-color);
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -79,7 +77,7 @@
 .shop-item .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--primary-color); /* Bright Blue for button */
+  background-color: var(--primary-color);
   color: white;
   border-radius: 5px;
   text-decoration: none;
@@ -87,5 +85,5 @@
 }
 
 .shop-item .btn:hover {
-  background-color: var(--accent-color); /* Red accent on hover */
+  background-color: var(--accent-color);
 }

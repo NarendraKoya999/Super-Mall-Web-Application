@@ -1,7 +1,6 @@
-// src/pages/Offers.js
 import React, { useState, useEffect } from 'react';
 import { fetchProducts } from '../services/api';
-import '../styles/Offers.css'; // Import custom styles
+import '../styles/Offers.css';
 
 function Offers({ productDeleted }) { // Accept the `productDeleted` prop
   const [offers, setOffers] = useState([]);

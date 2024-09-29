@@ -1,6 +1,5 @@
-// src/components/ShopList.js
 import React from 'react';
-import '../styles/ShopList.css'; // Import custom styles
+import '../styles/ShopList.css';
 
 function ShopList({ products }) {
   return (
