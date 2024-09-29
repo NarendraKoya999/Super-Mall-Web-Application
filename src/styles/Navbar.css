@@ -1,0 +1,111 @@
+/* src/styles/Navbar.css */
+.navbar {
+  background-color: var(--navbar-bg-color);
+  color: var(--text-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Space around the navbar */
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: all var(--transition-duration);
+}
+
+.navbar.sticky {
+  background-color: var(--primary-color);
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  text-decoration: none;
+  margin-left: 10px; /* Margin for the logo */
+}
+
+.navbar-brand:hover {
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  gap: 20px; /* Space between links */
+}
+
+.nav-item {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: color var(--transition-duration);
+}
+
+.nav-item:hover {
+  color: var(--primary-color);
+}
+
+.menu-icon {
+  display: none; /* Hidden on larger screens */
+  margin-right: 10px; /* Margin for the hamburger */
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column; /* Stack the dashes vertically */
+  justify-content: space-between; /* Space them evenly */
+  width: 30px; /* Increased width for better visibility */
+  height: 20px; /* Total height for three dashes */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.dash {
+  height: 3px; /* Height of each dash */
+  background-color: var(--text-color);
+  transition: all var(--transition-duration);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide the links in mobile view */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--navbar-bg-color);
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav-links.open {
+    display: flex; /* Show links when the hamburger menu is open */
+  }
+
+  .menu-icon {
+    display: block; /* Show hamburger menu in mobile view */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-left: auto; /* Move hamburger to the right */
+  }
+
+  .navbar-container {
+    justify-content: space-between; /* Align logo and menu */
+  }
+
+  .hamburger {
+    margin-left: auto; /* Ensures the hamburger is on the right */
+  }
+}

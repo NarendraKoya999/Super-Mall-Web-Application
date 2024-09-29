@@ -1,0 +1,72 @@
+/* src/styles/Register.css */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: var(--background-color);
+    min-height: 80vh;
+  }
+  
+  .register-card {
+    background-color: var(--card-bg-color);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    width: 100%;
+    max-width: 400px;
+    transition: box-shadow var(--transition-duration);
+  }
+  
+  .register-card:hover {
+    box-shadow: 0 12px 24px var(--shadow-color);
+  }
+  
+  .card-title {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 10px;
+    transition: border-color var(--transition-duration);
+  }
+  
+  .form-control:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px var(--primary-color);
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    transition: background-color var(--transition-duration), transform var(--transition-duration);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+  }
+  
+  .error-message {
+    color: var(--accent-color);
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .text-center a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color var(--transition-duration);
+  }
+  
+  .text-center a:hover {
+    color: var(--accent-color);
+  }
+  

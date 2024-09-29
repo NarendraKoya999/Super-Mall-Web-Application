@@ -1,0 +1,27 @@
+/* src/styles/global.css */
+html {
+    scroll-behavior: smooth;
+  }
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    transition: background-color var(--transition-duration), transform var(--transition-duration);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+  }
+  
+  .btn-secondary {
+    background-color: #95a5a6;
+    border: none;
+    transition: background-color var(--transition-duration), transform var(--transition-duration);
+  }
+  
+  .btn-secondary:hover {
+    background-color: #7f8c8d;
+    transform: scale(1.05);
+  }
+  

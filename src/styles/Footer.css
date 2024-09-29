@@ -1,0 +1,81 @@
+/* src/styles/Footer.css */
+
+.footer {
+  background-color: var(--footer-bg-color);
+  color: white;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 6px var(--shadow-color);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-left p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color:white;
+}
+
+.footer-left p:hover{
+  color:var(--primary-color);
+}
+
+.footer-left a {
+  color: white; /* Maintain white color for links */
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.footer-left a:hover {
+  color: var(--primary-color);
+}
+
+.footer-right { /* Grouping Follow Us and social icons together */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-right p {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem; /* Adjusted spacing between social icons */
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color var(--transition-duration);
+}
+
+.social-icons a:hover {
+  color: var(--primary-color);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    margin-top: 1rem;
+  }
+}

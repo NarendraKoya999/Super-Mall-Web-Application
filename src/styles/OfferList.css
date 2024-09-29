@@ -1,0 +1,74 @@
+/* src/styles/OfferList.css */
+
+/* Grid layout for the offers */
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--background-color); /* Background from variables */
+}
+
+/* Each offer card */
+.offer-card {
+  background-color: var(--card-bg-color); /* White card background */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px var(--shadow-color); /* Subtle shadow */
+  transition: transform var(--transition-duration), box-shadow var(--transition-duration); /* Smooth hover effect */
+}
+
+.offer-card:hover {
+  transform: var(--hover-transform); /* Slight zoom on hover */
+  box-shadow: 0 8px 16px var(--shadow-color); /* Larger shadow on hover */
+}
+
+/* Image styles to ensure they are fully visible */
+.offer-image {
+  width: 100%;
+  height: auto; /* Maintain the natural aspect ratio */
+  max-height: 250px; /* Set a maximum height to prevent images from being too large */
+  object-fit: contain; /* Ensure the entire image is shown without cutting off */
+  padding: 10px; /* Add some padding to ensure the image doesn't touch the edges */
+  transition: transform var(--transition-duration);
+}
+
+.offer-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Offer details section */
+.offer-details {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Offer title */
+.offer-details h3 {
+  font-size: 1.25rem;
+  color: var(--text-color); /* Dark gray for readability */
+  margin-bottom: 10px;
+}
+
+/* Offer description */
+.offer-details p {
+  font-size: 1rem;
+  color: #555555; /* Lighter gray for secondary information */
+  margin-bottom: 8px;
+}
+
+/* Compare button */
+.btn-compare {
+  background-color: var(--primary-color); /* Use primary color for buttons */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color var(--transition-duration), transform var(--transition-duration); /* Smooth hover effect */
+}
+
+.btn-compare:hover {
+  background-color: var(--accent-color); /* Change to accent color on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
